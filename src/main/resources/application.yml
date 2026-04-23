@@ -1,10 +1,12 @@
 spring:
   application:
-    name: ohhcode
+    name: retrace
   datasource:
     url: jdbc:mysql://${MYSQLHOST}:${MYSQLPORT}/${MYSQLDATABASE}?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC
     username: ${MYSQLUSER}
     password: ${MYSQLPASSWORD}
+  profiles:
+    active: ${SPRING_PROFILES_ACTIVE:local}
 #    url: jdbc:mysql://${MYSQLHOST:localhost}:${MYSQLPORT:3306}/${MYSQLDATABASE:ohhcode}?useSSL=false&allowPublicKeyRetrieval=true&createDatabaseIfNotExist=true
 #    username: ${MYSQLUSER:root}
 

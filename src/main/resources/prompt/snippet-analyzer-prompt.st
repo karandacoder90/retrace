@@ -169,6 +169,7 @@ OUTPUT (STRICT JSON ONLY)
     "recognitionSignals": [],
     "whenToUse": []
   },
+  "keyTrigger": "",
   "complexity": {
     "time": "",
     "space": ""
@@ -242,8 +243,11 @@ FIELD RULES:
 - recall.summary:
   → 5–10 short lines
   → recall-focused tone
-  → MUST include "Key Trigger"
   → Avoid instructional tone
+ ----------------------------------------------------------------
+- keyTrigger:
+  → 1 short phrase (15–20 words)
+  → Strong memory trigger
 ----------------------------------------------------------------
 - recall.recognitionSignals:
   → 3–5 short phrases MAX
