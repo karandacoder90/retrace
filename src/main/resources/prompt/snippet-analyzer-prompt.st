@@ -140,16 +140,6 @@ Avoid:
 
 -------------------------------------
 
-RECALL ENHANCEMENT:
-
-- Include ONE strong memory trigger line:
-  "Key Trigger: <short phrase>"
-
-Example:
-"Key Trigger: Binary search but shrink on match"
-
--------------------------------------
-
 OUTPUT (STRICT JSON ONLY)
 
 {

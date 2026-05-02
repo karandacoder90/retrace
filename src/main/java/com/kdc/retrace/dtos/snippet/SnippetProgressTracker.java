@@ -8,7 +8,7 @@ import java.util.UUID;
 public record SnippetProgressTracker(
         UUID snippetId,
         SnippetStatus status,
-        String message,
+        Boolean isDuplicate,
         Language language
 ) {
 }

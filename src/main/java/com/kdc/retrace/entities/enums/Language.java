@@ -6,4 +6,6 @@ public enum Language {
     MARATHI,
     HINGLISH,
     SPANISH,
+    KANNADA,
+    FRENCH,
 }

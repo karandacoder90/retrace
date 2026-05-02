@@ -1,6 +1,5 @@
 package com.kdc.retrace.services.snippet;
 
-import com.kdc.retrace.constants.AppConstants;
 import com.kdc.retrace.dtos.snippet.*;
 import com.kdc.retrace.entities.SnippetEntity;
 import com.kdc.retrace.entities.UserEntity;
@@ -115,7 +114,7 @@ public class SnippetService {
       return new SnippetProgressTracker(
           snippetId,
           SnippetStatus.ANALYZING,
-          AppConstants.getMessage(SnippetStatus.ANALYZING),
+          false,
           language);
     }
 
@@ -123,7 +122,7 @@ public class SnippetService {
     return new SnippetProgressTracker(
         snippet.getId(),
         SnippetStatus.ANALYZING,
-        AppConstants.getMessage(SnippetStatus.ANALYZING),
+        false,
         language);
   }
 
@@ -191,7 +190,7 @@ public class SnippetService {
       return new SnippetProgressTracker(
               snippet.snippetId(),
               existing.getStatus(),
-              "You already have this snippet added.",
+              true,
               snippet.language()
       );
     }
@@ -200,7 +199,7 @@ public class SnippetService {
     return new SnippetProgressTracker(
         progressTracker.snippetId(),
         progressTracker.status(),
-        progressTracker.message(),
+        progressTracker.isDuplicate(),
         progressTracker.language());
   }
 
